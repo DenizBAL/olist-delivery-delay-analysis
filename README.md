@@ -189,7 +189,7 @@ SQL Server (T-SQL: CTE, pencere fonksiyonları, `CROSS APPLY`, dinamik SQL), Pyt
 
 ## 7. Sonuç ve öneriler
 
-**Sonuç:** Gecikme düşük puanların en büyük tek kaynağı. Teslimatların yalnızca %6,8'i geç geliyor ama 1-2 yıldızlı puanların %32'sini oluşturuyor, ve puan gecikme süresiyle kademeli düşüyor (4,29 → 1,70). Gecikme dışında iki alan öne çıkıyor: çok kalemli siparişler (zamanında gelse bile düşük puan oranı 3-4 kat) ve `office_furniture` kategorisi. Düşük puanların yaklaşık yarısı operasyonel nedenlerden geliyor, kalan yarısı muhtemelen ürün kaynaklı.
+**Sonuç:** Düşük puanların en büyük sorunu geçikmelerdir. Teslimatların yalnızca %6,8'i geç geliyor ama 1-2 yıldızlı puanların %32'sini oluşturuyor, ve müşteri puanlaması gecikme süresiyle kademeli düşüyor (4,29 → 1,70). Gecikme dışında iki alan öne çıkıyor: çok kalemli siparişler (zamanında gelse bile düşük puan oranı 3-4 kat) ve `office_furniture` kategorisi. Düşük puanların yaklaşık yarısı operasyonel nedenlerden geliyor, kalan yarısı muhtemelen ürün kalitesiyle alakalı.
 
 **Önce yapılması gerekenler:**
 1. 4+ gün gecikmeye düşen siparişleri önceliklendir (ortalama puan 2,10 ve 1,70).
