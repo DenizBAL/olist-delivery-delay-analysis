@@ -187,13 +187,15 @@ DIVIDE(
 ## 6. Kullanılan araçlar
 SQL Server (T-SQL: CTE, pencere fonksiyonları, `CROSS APPLY`, dinamik SQL), Python (pandas, SQLAlchemy/pyodbc, scipy, matplotlib), Power BI (DAX, zaman zekâsı, koşullu biçimlendirme).
 
-## 7. Sonuç
+## 7. Sonuç ve öneriler
 
-Gecikme, düşük puanların en büyük tek kaynağı: teslimatların yalnızca %6,8'i geç geliyor ama 1-2 yıldızlı puanların %32'sini oluşturuyor, ve puan gecikme süresiyle kademeli düşüyor (4,29 → 1,70). Gecikmenin dışında iki yönetilebilir alan öne çıkıyor: çok kalemli siparişler (zamanında gelse bile düşük puan oranı 3-4 kat) ve `office_furniture` kategorisi.
+**Sonuç:** Gecikme düşük puanların en büyük tek kaynağı. Teslimatların yalnızca %6,8'i geç geliyor ama 1-2 yıldızlı puanların %32'sini oluşturuyor, ve puan gecikme süresiyle kademeli düşüyor (4,29 → 1,70). Gecikme dışında iki alan öne çıkıyor: çok kalemli siparişler (zamanında gelse bile düşük puan oranı 3-4 kat) ve `office_furniture` kategorisi. Düşük puanların yaklaşık yarısı operasyonel nedenlerden geliyor, kalan yarısı muhtemelen ürün kaynaklı.
 
-Düşük puanların yaklaşık yarısı operasyonel nedenlerden (gecikme, çok kalemli sipariş) geliyor. Bunlar önce müdahale edilebilecek alanlar. Kalan yarısı zamanında gelen tek kalemli siparişler, yani muhtemelen ürün kaynaklı.
-
-Bulgular ilişkisel. Nedensellik için parçalı teslimat verisi ve yorum metinlerinin sistematik analizi gerekir, bunlar sonraki adımlar.
+**Önce yapılması gerekenler:**
+1. 4+ gün gecikmeye düşen siparişleri önceliklendir (ortalama puan 2,10 ve 1,70).
+2. Çok kalemli siparişlerde parçalı teslimatı takip et ve müşteriyi bilgilendir.
+3. `office_furniture` için paketleme ve eksik parça kontrolü yap.
+4. Yüksek gecikmeli eyaletlerde (MA, CE, BA ve yakınlığa rağmen RJ) kargo operasyonunu incele.
 
 ## Klasör yapısı
 ```
