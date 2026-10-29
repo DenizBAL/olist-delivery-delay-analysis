@@ -143,6 +143,7 @@ Düşük puanların yaklaşık yarısı gecikme ve çok kalemli sipariş gibi op
 ![Root Cause Analysis](assets/dashboard_root_cause.png)
 
 **Sayfa 1 – Executive Overview:** KPI kartları (sipariş, gecikme oranı, gelir, ortalama puan) ve her birinin **önceki aya göre** değişimi (renkli: gecikme artışı kırmızı, sipariş artışı yeşil), aylık gecikme-puan grafiği, eyalet bazında gecikme.
+
 **Sayfa 2 – Root Cause Analysis:** gecikme süresi ve puan, kalem sayısı ve düşük puan, kategori bazında düşük puan (ortalama çizgisiyle), düşük puanların kaynağı (donut).
 
 **Veri modeli:** `vw_order_analysis` (sipariş düzeyi) merkezde; `vw_order_items_clean` (kalem), `vw_products_clean` (ürün), `vw_order_category` (tek kategorili siparişler, 1:1) ve bir `Takvim` tablosu ilişkili.
