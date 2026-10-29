@@ -187,6 +187,14 @@ DIVIDE(
 ## 6. Kullanılan araçlar
 SQL Server (T-SQL: CTE, pencere fonksiyonları, `CROSS APPLY`, dinamik SQL), Python (pandas, SQLAlchemy/pyodbc, scipy, matplotlib), Power BI (DAX, zaman zekâsı, koşullu biçimlendirme).
 
+## 7. Sonuç
+
+Gecikme, düşük puanların en büyük tek kaynağı: teslimatların yalnızca %6,8'i geç geliyor ama 1-2 yıldızlı puanların %32'sini oluşturuyor, ve puan gecikme süresiyle kademeli düşüyor (4,29 → 1,70). Gecikmenin dışında iki yönetilebilir alan öne çıkıyor: çok kalemli siparişler (zamanında gelse bile düşük puan oranı 3-4 kat) ve `office_furniture` kategorisi.
+
+Düşük puanların yaklaşık yarısı operasyonel nedenlerden (gecikme, çok kalemli sipariş) geliyor. Bunlar önce müdahale edilebilecek alanlar. Kalan yarısı zamanında gelen tek kalemli siparişler, yani muhtemelen ürün kaynaklı.
+
+Bulgular ilişkisel. Nedensellik için parçalı teslimat verisi ve yorum metinlerinin sistematik analizi gerekir, bunlar sonraki adımlar.
+
 ## Klasör yapısı
 ```
 Olist_E_commerce_Analysis/
