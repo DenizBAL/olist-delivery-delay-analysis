@@ -78,6 +78,8 @@ Aylık gecikme oranı ile aylık ortalama puan arasında güçlü negatif ilişk
 | Pearson r | **-0,92** (p < 0,0001) |
 | Spearman rho | **-0,68** (p = 0,0013) |
 
+![Aylık gecikme oranı ve ortalama puan korelasyonu](assets/gecikme_puan_korelasyon.png)
+
 İki değer arasındaki fark bilinçli bir uyarı: Pearson, üç uç ay (2017-11, 2018-02, 2018-03) tarafından şişiyor. Spearman sıralamaya baktığı için daha temkinli bir ölçü, ikisini birlikte raporluyorum.
 
 | Ay | Gecikme | Ortalama puan | Not |
